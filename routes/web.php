@@ -11,5 +11,9 @@
 |
 */
 
+Route::get('/', 'article_controller@show');
+
 Route::get('/not_login', 'article_controller@not_login');
+
+
 

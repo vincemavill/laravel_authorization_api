@@ -24,6 +24,11 @@ class article_controller extends Controller
    
     }
 
+    public function not_login()
+    {
+        return view("notlogin");
+    }
+    
     public function create()
     {
 
@@ -35,9 +40,9 @@ class article_controller extends Controller
     }
 
 
-    public function show($id)
+    public function show()
     {
-
+        return view('instruction');
     }
 
     public function edit($id)
@@ -55,8 +60,5 @@ class article_controller extends Controller
 
     }
 
-    public function not_login()
-    {
-        return view("notlogin");
-    }
+
 }
